@@ -265,3 +265,35 @@ To git@github.com:loganetherton/iel.git
 
 ```
 
+Now that we're happy with our progress, let's get it all up to master:
+
+```bash
+/p/s/iel ❯❯❯ git merge master secret_hotfix
+Updating 3c8e0d4..d047226
+Fast-forward
+ a.txt                |   0
+ b.txt                |   0
+ c.txt                |   0
+ d.txt                |   0
+ gegwe                |  80 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ git_demonstration.md | 172 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++---
+ 6 files changed, 249 insertions(+), 3 deletions(-)
+ create mode 100644 a.txt
+ create mode 100644 b.txt
+ create mode 100644 c.txt
+ create mode 100644 d.txt
+ create mode 100644 gegwe
+/p/s/iel ❯❯❯ git diff master secret_hotfix
+/p/s/iel ❯❯❯
+```
+
+`master` and `secret_hotfix` are completely merged and we are done!
+
+```bash
+/p/s/iel ❯❯❯ git push origin master                                                                                                                                                                                               ✘ 1 
+Total 0 (delta 0), reused 0 (delta 0)
+To git@github.com:loganetherton/iel.git
+   3c8e0d4..d047226  master -> master
+/p/s/iel ❯❯❯ 
+
+```
