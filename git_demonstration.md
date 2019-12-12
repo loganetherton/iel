@@ -89,13 +89,66 @@ secret.key
 Now let's try staging the files again:
 
 ```bash
-git add .
+/p/s/iel ❯❯❯ git add .
+/p/s/iel ❯❯❯ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   .gitignore
+	new file:   git_demonstration.md
+	new file:   package.json
+	new file:   question_2.js
+	new file:   question_2.txt
+	new file:   question_3.js
+	new file:   question_3.txt
+	new file:   yarn.lock
+
 ```
 
-We're on branch `master`, but we may not want to push directly there, to protect the integrity of the production code. Let's make a new one.
-
-
+OK! We're ready to make our initial commit:
 
 ```bash
-
+/p/s/iel ❯❯❯ git commit -m 'Initial commit'                                                                                                                                                                                     ✘ 128 
+[master (root-commit) 3c8e0d4] Initial commit
+ 8 files changed, 467 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 git_demonstration.md
+ create mode 100644 package.json
+ create mode 100644 question_2.js
+ create mode 100644 question_2.txt
+ create mode 100644 question_3.js
+ create mode 100644 question_3.txt
+ create mode 100644 yarn.lock
+****
 ```
+
+Let's take a look back and see if we're ok with everything we've done thus far:
+
+```bash
+/p/s/iel ❯❯❯ git log
+commit 3c8e0d4ec5f7e5b58aabfd47fce4806e55581878
+Author: logan <loganetherton@gmail.com>
+Date:   Thu Dec 12 12:26:54 2019 -0500
+```
+
+We're on branch `master`, but we have a whole team of folks who need to be commit to this repository. We should make another branch for this untested code:
+
+```bash
+/p/s/iel ❯❯❯ git branch secret master                                                                                                                                                                                           ✘ 128 
+/p/s/iel ❯❯❯ git branch
+* master
+  secret
+```
+
+Now we've got our own secret branch! Let's get on it:
+
+```bash
+/p/s/iel ❯❯❯ git checkout secret                                                                                                                                                                                                ✘ 128 
+M	git_demonstration.md
+Switched to branch 'secret'
+```
+
