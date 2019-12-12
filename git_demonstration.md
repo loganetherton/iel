@@ -169,50 +169,6 @@ Looks like that was that mistake, and we certainly don't want to push it up to t
 /p/s/iel ❯❯❯ git branch secret_hotfix secret
 /p/s/iel ❯❯❯ git checkout secret_hotfix
 Switched to branch 'secret_hotfix'
-/p/s/iel ❯❯❯ git log
-commit b0227e232b105bb0deb2c25517e06a831533a949
-Author: logan <loganetherton@gmail.com>
-Date:   Thu Dec 12 12:32:51 2019 -0500
-
-    D is looking good!
-
-commit e8cb01611f8c8498be6acf0e571318146a1a5c64
-Author: logan <loganetherton@gmail.com>
-Date:   Thu Dec 12 12:32:35 2019 -0500
-
-    c is all done!
-
-commit f5f057fab87f3bfdf8e91c905f0258a9c4172b64
-Author: logan <loganetherton@gmail.com>
-Date:   Thu Dec 12 12:32:13 2019 -0500
-
-    A and B are ready for liftoff!
-
-commit 3c8e0d4ec5f7e5b58aabfd47fce4806e55581878
-Author: logan <loganetherton@gmail.com>
-Date:   Thu Dec 12 12:26:54 2019 -0500
-
-    Initial commit
-/p/s/iel ❯❯❯ git rebase -i HEAD~2
-Successfully rebased and updated refs/heads/secret_hotfix.
-/p/s/iel ❯❯❯ git log
-commit ae3f78e156bd6ea737961f15c32aa85d076fe606
-Author: logan <loganetherton@gmail.com>
-Date:   Thu Dec 12 12:32:51 2019 -0500
-
-    D is looking good!
-
-commit f5f057fab87f3bfdf8e91c905f0258a9c4172b64
-Author: logan <loganetherton@gmail.com>
-Date:   Thu Dec 12 12:32:13 2019 -0500
-
-    A and B are ready for liftoff!
-
-commit 3c8e0d4ec5f7e5b58aabfd47fce4806e55581878
-Author: logan <loganetherton@gmail.com>
-Date:   Thu Dec 12 12:26:54 2019 -0500
-
-    Initial commit
 
 ```
 
