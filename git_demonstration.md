@@ -152,3 +152,15 @@ M	git_demonstration.md
 Switched to branch 'secret'
 ```
 
+We're ready to get some work done. In fact, we've finished `A`, `B`, and `D` already! But it seems someone has committed `C` before it was ready! Let's find out where that came from:
+
+```bash
+/p/s/iel ❯❯❯ git log --all 'c.txt'
+commit e8cb01611f8c8498be6acf0e571318146a1a5c64
+Author: logan <loganetherton@gmail.com>
+Date:   Thu Dec 12 12:32:35 2019 -0500
+
+    c is all done!
+```
+
+Looks like that was a mistake, and we certainly don't want to push it up to the repo. 
