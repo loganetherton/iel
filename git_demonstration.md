@@ -290,10 +290,15 @@ Fast-forward
 `master` and `secret_hotfix` are completely merged and we are done!
 
 ```bash
-/p/s/iel ❯❯❯ git push origin master                                                                                                                                                                                               ✘ 1 
-Total 0 (delta 0), reused 0 (delta 0)
+/p/s/iel ❯❯❯ git push origin master
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 647 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
 To git@github.com:loganetherton/iel.git
-   3c8e0d4..d047226  master -> master
+   d047226..4516f33  master -> master
 /p/s/iel ❯❯❯ 
 
 ```
