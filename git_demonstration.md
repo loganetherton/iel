@@ -170,9 +170,81 @@ Looks like that was that mistake, and we certainly don't want to push it up to t
 /p/s/iel ❯❯❯ git checkout secret_hotfix
 Switched to branch 'secret_hotfix'
 
+
+pick e8cb016 c is all done!
+pick b0227e2 D is looking good!
+pick 2da78cb Demonstration
+pick a652d61 more demo
+pick 79bab32 cherrypick
+pick 5a0f6d3 cherrypick
+
 ```
 
-Check it out! Now, not only do we have all of the files we want, but we got rid of the files that we don't want. And they still exist on the original `secret` branch!
+But we're going to get rid of `c.txt`.
 
-The last thing I'm wondering if when `b.txt` was added:
+```bash
+drop e8cb016 c is all done!
+pick b0227e2 D is looking good!
+pick 2da78cb Demonstration
+pick a652d61 more demo
+pick 79bab32 cherrypick
+pick 5a0f6d3 cherrypick
+
+```
+
+Let's see if it worked:
+
+```bash
+/p/s/iel ❯❯❯ git log                                                                                                                                                                                                              ✘ 1 
+commit 5a0f6d3ace9cc5c89dfa16fdbd0b6da894cf6eef
+Author: logan <loganetherton@gmail.com>
+Date:   Thu Dec 12 13:20:26 2019 -0500
+
+    cherrypick
+
+commit 79bab32707d9965dcd8bdcdc4ccfaeaee17f260a
+Author: logan <loganetherton@gmail.com>
+Date:   Thu Dec 12 13:19:13 2019 -0500
+
+    cherrypick
+
+commit a652d61f162dc0ed9e0b0903d8219e35889633df
+Author: logan <loganetherton@gmail.com>
+Date:   Thu Dec 12 12:56:30 2019 -0500
+
+    more demo
+
+commit 2da78cbe8768ff301163f44ce72a73edc5291615
+Author: logan <loganetherton@gmail.com>
+Date:   Thu Dec 12 12:43:25 2019 -0500
+
+    Demonstration
+
+commit b0227e232b105bb0deb2c25517e06a831533a949
+Author: logan <loganetherton@gmail.com>
+Date:   Thu Dec 12 12:32:51 2019 -0500
+
+    D is looking good!
+
+commit e8cb01611f8c8498be6acf0e571318146a1a5c64
+Author: logan <loganetherton@gmail.com>
+Date:   Thu Dec 12 12:32:35 2019 -0500
+
+    c is all done!
+
+commit f5f057fab87f3bfdf8e91c905f0258a9c4172b64
+Author: logan <loganetherton@gmail.com>
+Date:   Thu Dec 12 12:32:13 2019 -0500
+
+    A and B are ready for liftoff!
+
+commit 3c8e0d4ec5f7e5b58aabfd47fce4806e55581878
+Author: logan <loganetherton@gmail.com>
+Date:   Thu Dec 12 12:26:54 2019 -0500
+
+    Initial commit
+
+```
+
+Sure enough, `c.txt` is gone! Time to push:
 
