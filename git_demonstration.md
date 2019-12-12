@@ -248,3 +248,20 @@ Date:   Thu Dec 12 12:26:54 2019 -0500
 
 Sure enough, `c.txt` is gone! Time to push:
 
+```bash
+/p/s/iel ❯❯❯ git push origin master secret secret_hotfix
+Counting objects: 9, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 1.25 KiB | 0 bytes/s, done.
+Total 9 (delta 6), reused 0 (delta 0)
+remote: Resolving deltas: 100% (6/6), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'secret_hotfix' on GitHub by visiting:
+remote:      https://github.com/loganetherton/iel/pull/new/secret_hotfix
+remote: 
+To git@github.com:loganetherton/iel.git
+ * [new branch]      secret_hotfix -> secret_hotfix
+
+```
+
