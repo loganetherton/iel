@@ -163,12 +163,12 @@ Date:   Thu Dec 12 12:32:35 2019 -0500
     c is all done!
 ```
 
-Looks like that was a mistake, and we certainly don't want to push it up to the repo! Let's see if we can't get rid of it:
+Looks like that was that mistake, and we certainly don't want to push it up to the repo! Let's see if we can't get rid of it:
 
 ```bash
-/p/s/iel ❯❯❯ git branch secret2 secret
-/p/s/iel ❯❯❯ git checkout secret2
-Switched to branch 'secret2'
+/p/s/iel ❯❯❯ git branch secret_hotfix secret
+/p/s/iel ❯❯❯ git checkout secret_hotfix
+Switched to branch 'secret_hotfix'
 /p/s/iel ❯❯❯ git log
 commit b0227e232b105bb0deb2c25517e06a831533a949
 Author: logan <loganetherton@gmail.com>
@@ -194,7 +194,7 @@ Date:   Thu Dec 12 12:26:54 2019 -0500
 
     Initial commit
 /p/s/iel ❯❯❯ git rebase -i HEAD~2
-Successfully rebased and updated refs/heads/secret2.
+Successfully rebased and updated refs/heads/secret_hotfix.
 /p/s/iel ❯❯❯ git log
 commit ae3f78e156bd6ea737961f15c32aa85d076fe606
 Author: logan <loganetherton@gmail.com>
